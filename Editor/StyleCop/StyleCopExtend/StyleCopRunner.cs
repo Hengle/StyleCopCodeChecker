@@ -51,7 +51,8 @@ namespace StyleCopExtend
         /// https://github.com/Nylle/StyleCop.Console を利用しています。
         /// こちらのリポジトリをCloneしたフォルダを指定してください。
         /// </summary>
-        private static readonly string StyleCopDirectory = Application.dataPath + "/Editor/StyleCop/StyleCop.Console/";
+        private static readonly string StyleCopDirectory =
+            Application.dataPath + "/StyleCopCodeChecker/Editor/StyleCop/StyleCop.Console/";
 
         /// <summary>
         /// StyleCop実行ファイルのパス
@@ -67,7 +68,7 @@ namespace StyleCopExtend
 #else
         private static readonly string Args = StyleCopExePath +
                                               " -s " + Application.dataPath +
-                                              "/Editor/StyleCop/StyleCop.Console/StyleCop.Console/bin/Debug/Settings.StyleCop -p ";
+                                              "/StyleCopCodeChecker/Editor/StyleCop/StyleCop.Console/StyleCop.Console/bin/Debug/Settings.StyleCop -p ";
 #endif
         /// <summary>
         /// ログ収集用
